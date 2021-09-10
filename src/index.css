@@ -9,12 +9,26 @@
 display: inline-block;
 border: 2px solid red;
 color: black;
-text-align: center;
 padding: 40px;
+padding-top: 0px;
 width: 1.934cm;
+height: 4cm;
 text-decoration: none;
+line-height: 0.1cm;
+position: relative;
 }
 
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.934cm;
+  height: 3cm;
+}
+
+.Day {
+  align-self: flex-start;
+}
 
 .menu-container {
   margin: auto;
@@ -42,11 +56,16 @@ button {
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-height: 250px;
 height: 300px
 }
 
 .citiesWeather {
   display: flex;
   flex-direction: row
+}
+
+.WeatherPic {
+  position: absolute;
+  top: 7.5vh;
+  right: 7vh;
 }

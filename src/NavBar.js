@@ -9,7 +9,7 @@ class NavBar extends Component {
 
   handleNav = (direction) => {
     if (direction === 'left') {
-      if (this.navRef) {this.navRef.current.scrollLeft -= 784.6}
+      if (this.navRef) {this.navRef.current.scrollLeft -= 785}
     } else {
       if (this.navRef) {this.navRef.current.scrollLeft += 786}
     }
