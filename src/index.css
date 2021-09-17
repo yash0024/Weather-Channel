@@ -11,19 +11,50 @@ border: 2px solid red;
 color: black;
 padding: 40px;
 padding-top: 0px;
-width: 1.934cm;
+width: 73px;
 height: 4cm;
 text-decoration: none;
 line-height: 0.1cm;
 position: relative;
 }
 
-.Content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 1.934cm;
-  height: 3cm;
+.search {
+  position: absolute;
+  left: 10vh;
+}
+
+.input {
+  padding: 5px 15px;
+  width: 300px;
+}
+
+.user {
+  padding: 10px;
+  width: 263px
+}
+
+.user:hover{
+   background-color: yellow;
+}
+
+.user-list {
+height: 140px;
+overflow: scroll;
+width: 300px;
+}
+
+li:hover {
+  background-color: yellow;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 .Day {
@@ -43,8 +74,7 @@ position: relative;
   overflow: hidden;
 }
 
-button {
-  background-color: white;
+.round {
   color: black;
   border-radius: 50%;
   height: 20px;
@@ -68,4 +98,10 @@ height: 300px
   position: absolute;
   top: 7.5vh;
   right: 7vh;
+}
+
+.weather {
+  position: absolute;
+  top: 15.5vh;
+  right: 7.55vh;
 }

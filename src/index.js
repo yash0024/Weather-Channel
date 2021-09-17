@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './App.css';
 import WeatherBox from './weathercomp.js';
-import Header from './header.js';
+import SearchBar from './searchBar.js';
 import NavBar from './NavBar.js';
 
 
@@ -16,18 +16,7 @@ class WeatherChannel extends React.Component {
 
     return (
       <div className = 'main'>
-          <Header />
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <NavBar />
+          <SearchBar />
       </div>
     );
   }

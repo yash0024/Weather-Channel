@@ -9,20 +9,21 @@ class NavBar extends Component {
 
   handleNav = (direction) => {
     if (direction === 'left') {
-      if (this.navRef) {this.navRef.current.scrollLeft -= 785}
+      if (this.navRef) {this.navRef.current.scrollLeft -= 784.6}
     } else {
-      if (this.navRef) {this.navRef.current.scrollLeft += 786}
+      if (this.navRef) {this.navRef.current.scrollLeft += 785}
     }
   }
 
   render() {
+    const cities = this.props.citiesToShow;
     return (
       <div className='menu-container'>
         <div>
           <button onClick={() => this.handleNav('left')}><i className="round"></i>&#8249;</button>
         </div>
         <div className='nav-items' ref={this.navRef}>
-        <CitiesWeather />
+        <CitiesWeather displayCities = {cities}/>
         </div>
         <div>
           <button onClick={() => this.handleNav('right')}><i className="round">&#8250;</i></button>

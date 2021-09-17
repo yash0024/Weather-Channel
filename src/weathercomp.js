@@ -16,6 +16,7 @@ class WeatherBox extends React.Component {
         width = "50"
         height = "50">
       </img>
+      <b className = "weather">Sunny</b>
     </div>
   );
   }
